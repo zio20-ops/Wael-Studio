@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Security Headers -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="X-Content-Type-Options" content="nosniff">
+        <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+        <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+        <meta name="referrer" content="strict-origin-when-cross-origin">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://code.iconify.design https://fonts.googleapis.com; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-ancestors 'self';">
+        <link rel="icon" href="Imgs/W Logo.png" type="image/png">
+        <title>W Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Icons -->
+        <script async src="https://code.iconify.design/3/3.1.0/iconify.min.js" integrity="sha512-XbuPj9OS+W65u7iUKxPYJ4vHc5KYaC4JbNrUK2kqN9SWdw8dZfz3z9MHoRtW/DhJdLEVaMHhzxGzv5V+5kYKA==" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/bootstrap-grid.css">
+    </head>
+    <body class="">
+            <!-- Loading Screen -->
+        <div class="loading-screen" id="loadingScreen-index">
+            <div class="loading-ring"></div>
+            <div class="loading-logo">
+                <img src="Imgs/W Logo.png" alt="Logo">
+            </div>
+        </div>
+
+        <!-- Noise Texture -->
+        <div class="noise-overlay"></div>
+
+        <!-- Ambient Background Light -->
+        <div class="ambient-light">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="fixed z-40">
+            <div class="nav-content">
+                <a href="#home" class="logo"><img src="Imgs/W Logo.png" alt="W Logo" class="logo-img">
+                    <img src="Imgs/Studio copy.png" alt="" class="logo-text">
+            </a>
+                
+                <div class="nav-links" id="navLinks">
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="btn-contact">Contact Us</a>
+                </div>
+
+                <button class="menu-btn" id="menuBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24" data-icon="lucide:menu" data-width="24" data-height="24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5h16M4 12h16M4 19h16"></path></svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="" id="home">
+            <!-- Main Content -->
+            <div class="container relative z-10 flex-col items-center">
+                <div class="justify-center flex">
+                    <img src="Imgs/W Logo.png" alt="W Logo" class="logo-img1">
+                </div>
+                <br>
+                <p class="hero-desc">
+                    <span class="gradient-text">Welcome To Wael Studio</span>
+                </p>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section class="section-std" id="about">
+            <div class="container about-grid">
+                <div class="z-10">
+                    <div class="section-header-line">
+                        <span class="line-marker" style="background: var(--fuchsia-500);"></span>
+                        <span class="text-xs font-semibold uppercase tracking-widest" style="color: var(--fuchsia-400);">About Us</span>
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-semibold tracking-tight text-white" style="margin-bottom: 2rem; line-height: 1.2;">Where Creativity Meets Strategy.</h2>
+                    <p class="text-lg text-muted" style="margin-bottom: 2rem; color: var(--text-muted);">
+                        I help brands find their voice through powerful visual storytelling.From concept to execution, every design decision is intentional, purposeful, and built to inspire.
+                    </p>
+                    <div class="about-stats">
+                        <div>
+                            <div class="stat-num">25+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div>
+                            <div class="stat-num">+2y</div>
+                            <div class="stat-label">Experience</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual Decoration -->
+                <div class="about-visual">
+                    <!-- Abstract blobs inside box -->
+                    <div class="absolute" style="top: 25%; left: 25%; width: 8rem; height: 8rem; background: var(--fuchsia-500); filter: blur(40px); opacity: 0.6; border-radius: 50%;"></div>
+                    <div class="absolute" style="bottom: 25%; right: 25%; width: 10rem; height: 10rem; background: var(--cyan-500); filter: blur(50px); opacity: 0.6; border-radius: 50%;"></div>
+                    
+                    <div class="quote-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-icon="lucide:quote" style="color: white; margin-bottom: 1rem; width: 1.5rem; height: 1.5rem;"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2a1 1 0 0 1 1 1v1a2 2 0 0 1-2 2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1a6 6 0 0 0 6-6V5a2 2 0 0 0-2-2zM5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2a1 1 0 0 1 1 1v1a2 2 0 0 1-2 2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1a6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg>
+                        <p class="text-lg font-medium" style="color: white; font-style: italic;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" style="padding: 8rem 1.5rem;" class="">
+            <div class="container">
+                <div class="skills-header">
+                    <div>
+                        <div class="section-header-line">
+                            <span class="line-marker" style="background: var(--cyan-500);"></span>
+                            <span class="text-xs font-semibold uppercase tracking-widest" style="color: var(--cyan-400);">Our Arsenal</span>
+                        </div>
+                        <h2 class="text-4xl font-semibold" style="color: var(--white);">Skills &amp; Capabilities</h2>
+                    </div>
+                    <p class="text-sm text-muted" style="max-width: 28rem; line-height: 1.6;">
+                        We leverage the bleeding edge of web technology to deliver performance without compromising on visual fidelity.
+                    </p>
+                </div>
+
+                <!-- Skills Grid -->
+                <div class="skills-grid">
+                    <!-- Card 1 -->
+                    <div class="skill-card sc-cyan">
+                        <div class="skill-icon-bg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.893 4.514l7.977 14a.993 .993 0 0 1 -.394 1.365a1.04 1.04 0 0 1 -.5 .127h-3.476l-4.5 -8l-2.5 4h1.5l2 4h-8.977c-.565 0 -1.023 -.45 -1.023 -1c0 -.171 .045 -.34 .13 -.49l7.977 -13.993a1.034 1.034 0 0 1 1.786 0z" /></svg>
+                        </div>
+                        <div class="relative z-10">
+                            <span class="skill-header-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-adobe-photoshop"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12c0 -4.243 0 -6.364 1.318 -7.682s3.44 -1.318 7.682 -1.318s6.364 0 7.682 1.318s1.318 3.44 1.318 7.682s0 6.364 -1.318 7.682s-3.44 1.318 -7.682 1.318s-6.364 0 -7.682 -1.318s-1.318 -3.44 -1.318 -7.682" /><path d="M6.79 15.79v-3.79m0 0v-2.724c0 -.11 0 -.165 .004 -.211c.044 -.45 .4 -.806 .85 -.85c.046 -.004 .101 -.004 .211 -.004h1.303a1.895 1.895 0 1 1 0 3.789l-2.368 0" /><path d="M17.178 11.263c-.164 -.659 -.935 -1.158 -1.862 -1.158c-1.047 0 -1.895 .637 -1.895 1.421c0 .785 .848 1.421 1.895 1.421c1.046 0 1.895 .637 1.895 1.421c0 .785 -.849 1.421 -1.895 1.421c-.93 0 -1.704 -.502 -1.864 -1.165" /></svg>
+                            </span>
+                            <h3 class="text-lg font-semibold" style="color: var(--white); margin-bottom: 0.5rem;">Graphic Design</h3>
+                            <ul class="skill-list">
+                                <li><span class="dot"></span>Photo Manipulation</li>
+                                <li><span class="dot"></span>Retouching & Color Grading</li>
+                                <li><span class="dot"></span>Social Media Creatives</li>
+                                <li><span class="dot"></span>Ad Design</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="skill-card sc-violet" >
+                        <div class="skill-icon-bg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-sparkles-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 7a9.3 9.3 0 0 0 1.516 -.546c.911 -.438 1.494 -1.015 1.937 -1.932c.207 -.428 .382 -.928 .547 -1.522c.165 .595 .34 1.095 .547 1.521c.443 .918 1.026 1.495 1.937 1.933c.426 .205 .925 .38 1.516 .546a9.3 9.3 0 0 0 -1.516 .547c-.911 .438 -1.494 1.015 -1.937 1.932a9 9 0 0 0 -.547 1.521c-.165 -.594 -.34 -1.095 -.547 -1.521c-.443 -.918 -1.026 -1.494 -1.937 -1.932a9 9 0 0 0 -1.516 -.547" /><path d="M3 14a21 21 0 0 0 1.652 -.532c2.542 -.953 3.853 -2.238 4.816 -4.806a20 20 0 0 0 .532 -1.662a20 20 0 0 0 .532 1.662c.963 2.567 2.275 3.853 4.816 4.806q .75 .28 1.652 .532a21 21 0 0 0 -1.652 .532c-2.542 .953 -3.854 2.238 -4.816 4.806a20 20 0 0 0 -.532 1.662a20 20 0 0 0 -.532 -1.662c-.963 -2.568 -2.275 -3.853 -4.816 -4.806a21 21 0 0 0 -1.652 -.532" /></svg>                    </div>
+                        <div class="relative z-10">
+                            <span class="skill-header-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-square-letter-w"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14"/><path d="M9 8l1 8l2 -5l2 5l1 -8"/></svg>
+                            </span>
+                            <h3 class="text-lg font-semibold" style="color: var(--white); margin-bottom: 0.5rem;">Branding</h3>
+                            <ul class="skill-list">
+                                <li class=""><span class="dot"></span>Visual Identity Design</li>
+                                <li class=""><span class="dot"></span>Brand Guidelines</li>
+                                <li class=""><span class="dot"></span>Typography Systems</li>
+                                <li class=""><span class="dot"></span>Packaging Design</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="skill-card sc-emerald">
+                        <div class="skill-icon-bg">
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="44" height="44" viewBox="0 0 24 24" data-icon="lucide:smartphone" data-width="48"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></g></svg>
+                        </div>
+                        <div class="relative z-10">
+                            <span class="skill-header-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24" data-icon="lucide:zap" data-width="24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                            </span>
+                            <h3 class="text-lg font-semibold" style="color: var(--white); margin-bottom: 0.5rem;">Marketing Design</h3>
+                            <ul class="skill-list">
+                                <li><span class="dot"></span>Social Media Campaigns</li>
+                                <li><span class="dot"></span>Print Design</li>
+                                <li><span class="dot"></span>Content Strategy</li>
+                                <li><span class="dot"></span>Motion Posts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Marquee -->
+                <div class="marquee-container">
+                    <div class="marquee-fade fade-left"></div>
+                    <div class="marquee-fade fade-right"></div>
+                    
+                    <div class="marquee-track">
+                        <div class="marquee-content">
+                            <div class="tool-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-figma"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6 6a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3a3 3 0 0 1 -3 3h-6a3 3 0 0 1 -3 -3" /><path d="M9 9a3 3 0 0 0 0 6h3m-3 0a3 3 0 1 0 3 3v-15"/></svg><span class="font-semibold text-sm">Figma</span></div>
+                            <div class="tool-item"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 12.1333C2 8.58633 2 6.81283 2.69029 5.45806C3.29749 4.26637 4.26637 3.29749 5.45806 2.69029C6.81283 2 8.58633 2 12.1333 2H19.8667C23.4137 2 25.1872 2 26.5419 2.69029C27.7336 3.29749 28.7025 4.26637 29.3097 5.45806C30 6.81283 30 8.58633 30 12.1333V19.8667C30 23.4137 30 25.1872 29.3097 26.5419C28.7025 27.7336 27.7336 28.7025 26.5419 29.3097C25.1872 30 23.4137 30 19.8667 30H12.1333C8.58633 30 6.81283 30 5.45806 29.3097C4.26637 28.7025 3.29749 27.7336 2.69029 26.5419C2 25.1872 2 23.4137 2 19.8667V12.1333Z" fill="#001E36"></path> <path d="M8 22.5162V10.2034C8 10.1197 8.035 10.0718 8.11667 10.0718C9.3223 10.0718 10.5274 10 11.7333 10C13.6902 10 15.809 10.6691 16.5517 12.7162C16.7267 13.2188 16.82 13.7333 16.82 14.2718C16.82 15.3009 16.5867 16.1504 16.12 16.8205C14.8164 18.6923 12.557 18.6632 10.5317 18.6632V22.5043C10.5475 22.618 10.4506 22.6718 10.3567 22.6718H8.14C8.04667 22.6718 8 22.6239 8 22.5162ZM10.5433 12.3812V16.4017C11.3464 16.4605 12.1867 16.4669 12.9583 16.2103C13.8102 15.9645 14.2767 15.2272 14.2767 14.3436C14.3003 13.5907 13.8901 12.8683 13.1917 12.5966C12.4294 12.2796 11.3662 12.2606 10.5433 12.3812Z" fill="#31A8FF"></path> <path d="M24.0967 15.6074C23.7437 15.4213 23.3677 15.2852 22.979 15.2028C22.4796 15.0853 20.5098 14.6737 20.509 15.7037C20.5265 16.2787 21.4393 16.5604 21.8426 16.7247C23.2585 17.2108 24.8607 18.0797 24.8292 19.8264C24.8725 22.0008 22.7657 22.8701 20.9598 22.8703C20.0197 22.88 19.0403 22.7344 18.1799 22.3308C18.0977 22.2873 18.0449 22.1944 18.0484 22.0996V20.019C18.0391 19.9356 18.1287 19.8627 18.1987 19.9227C19.0417 20.4325 20.0409 20.6801 21.0162 20.6933C21.4467 20.6933 22.2999 20.6516 22.2935 20.019C22.2935 19.412 21.2728 19.1329 20.8659 18.9787C20.2761 18.7682 19.7169 18.4765 19.2036 18.1118C18.4862 17.6001 18.0362 16.7797 18.0484 15.8771C18.0442 13.8297 19.9835 12.9107 21.73 12.9103C22.5464 12.9035 23.4232 12.964 24.1832 13.2956C24.2925 13.3277 24.3151 13.4429 24.3147 13.546V15.4918C24.3216 15.6126 24.1875 15.6537 24.0967 15.6074Z" fill="#31A8FF"></path> </g></svg><span class="font-semibold text-sm">Adobe Photoshop</span></div>
+                            <div class="tool-item"><svg viewBox="0 123.30600000000001 595.279 595.279" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><radialGradient id="a" cx="-183.69" cy="328.972" r=".76" gradientTransform="matrix(545.6736 0 0 528.3113 100439.305 -173525.125)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#423325" stop-opacity=".98"></stop><stop offset="1" stop-color="#1c0a00"></stop></radialGradient><path d="M24.803 155.549h545.674v530.792H24.803V155.549z" fill="url(#a)"></path><path d="M24.803 155.549h545.674v530.792H24.803V155.549zM0 711.145h595.28V130.746H0v580.399zm389.908-373.539c0-1.984.744-2.977 2.977-2.977h38.941c1.983 0 2.976.744 2.976 2.977v195.699c0 1.983-.496 2.976-2.976 2.976h-38.445c-2.48 0-3.225-1.24-3.225-3.224V337.606h-.248zm-2.728-56.304c0-15.874 11.161-25.299 25.3-25.299 15.13 0 25.299 10.169 25.299 25.299 0 16.37-10.665 25.299-25.795 25.299-14.387.001-24.804-8.929-24.804-25.299zM275.565 419.209c-6.944-27.532-23.314-87.556-29.516-116.576h-.496c-5.209 29.02-18.354 78.13-28.771 116.576h58.783zm-68.953 40.182l-19.595 74.41c-.496 1.983-1.24 2.479-3.72 2.479h-36.461c-2.48 0-2.977-.744-2.48-3.72l70.441-246.546c1.24-4.464 1.984-8.433 2.48-20.586 0-1.736.744-2.48 1.984-2.48h52.087c1.736 0 2.48.496 2.977 2.48l78.874 267.628c.496 1.983 0 3.224-1.984 3.224h-41.174c-1.984 0-3.225-.496-3.72-2.231l-20.339-74.658h-79.37z" fill="#ff7f18"></path></g></svg><span class="font-semibold text-sm">Adobe illustrator</span></div>
+                            <div class="tool-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Sketch-Logo--Streamline-Logos" height="24" width="24"> <desc>Sketch Logo Streamline Icon: https://streamlinehq.com</desc> <path fill="#ffffff" fill-rule="evenodd" d="M10.887 2.091 6.5 2.457v5.118l4.387 -5.484ZM5.5 2.833 1.25 8.5H5.5V2.833ZM1.267 9.5l8.99 10.703L5.67 9.5H1.267Zm12.476 10.703L22.733 9.5H18.33l-4.587 10.703ZM22.75 8.5 18.5 2.833V8.5h4.25ZM17.5 2.457v5.118L13.113 2.09l4.387 0.366ZM12 2.3l4.96 6.2H7.04L12 2.3ZM6.758 9.5 12 21.73 17.242 9.5H6.758Z" clip-rule="evenodd" stroke-width="1"></path></svg><span class="font-semibold text-sm">Sketch</span></div>
+                            <div class="tool-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-figma"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6 6a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3a3 3 0 0 1 -3 3h-6a3 3 0 0 1 -3 -3" /><path d="M9 9a3 3 0 0 0 0 6h3m-3 0a3 3 0 1 0 3 3v-15"/></svg><span class="font-semibold text-sm">Figma</span></div>
+                            <div class="tool-item"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 12.1333C2 8.58633 2 6.81283 2.69029 5.45806C3.29749 4.26637 4.26637 3.29749 5.45806 2.69029C6.81283 2 8.58633 2 12.1333 2H19.8667C23.4137 2 25.1872 2 26.5419 2.69029C27.7336 3.29749 28.7025 4.26637 29.3097 5.45806C30 6.81283 30 8.58633 30 12.1333V19.8667C30 23.4137 30 25.1872 29.3097 26.5419C28.7025 27.7336 27.7336 28.7025 26.5419 29.3097C25.1872 30 23.4137 30 19.8667 30H12.1333C8.58633 30 6.81283 30 5.45806 29.3097C4.26637 28.7025 3.29749 27.7336 2.69029 26.5419C2 25.1872 2 23.4137 2 19.8667V12.1333Z" fill="#001E36"></path> <path d="M8 22.5162V10.2034C8 10.1197 8.035 10.0718 8.11667 10.0718C9.3223 10.0718 10.5274 10 11.7333 10C13.6902 10 15.809 10.6691 16.5517 12.7162C16.7267 13.2188 16.82 13.7333 16.82 14.2718C16.82 15.3009 16.5867 16.1504 16.12 16.8205C14.8164 18.6923 12.557 18.6632 10.5317 18.6632V22.5043C10.5475 22.618 10.4506 22.6718 10.3567 22.6718H8.14C8.04667 22.6718 8 22.6239 8 22.5162ZM10.5433 12.3812V16.4017C11.3464 16.4605 12.1867 16.4669 12.9583 16.2103C13.8102 15.9645 14.2767 15.2272 14.2767 14.3436C14.3003 13.5907 13.8901 12.8683 13.1917 12.5966C12.4294 12.2796 11.3662 12.2606 10.5433 12.3812Z" fill="#31A8FF"></path> <path d="M24.0967 15.6074C23.7437 15.4213 23.3677 15.2852 22.979 15.2028C22.4796 15.0853 20.5098 14.6737 20.509 15.7037C20.5265 16.2787 21.4393 16.5604 21.8426 16.7247C23.2585 17.2108 24.8607 18.0797 24.8292 19.8264C24.8725 22.0008 22.7657 22.8701 20.9598 22.8703C20.0197 22.88 19.0403 22.7344 18.1799 22.3308C18.0977 22.2873 18.0449 22.1944 18.0484 22.0996V20.019C18.0391 19.9356 18.1287 19.8627 18.1987 19.9227C19.0417 20.4325 20.0409 20.6801 21.0162 20.6933C21.4467 20.6933 22.2999 20.6516 22.2935 20.019C22.2935 19.412 21.2728 19.1329 20.8659 18.9787C20.2761 18.7682 19.7169 18.4765 19.2036 18.1118C18.4862 17.6001 18.0362 16.7797 18.0484 15.8771C18.0442 13.8297 19.9835 12.9107 21.73 12.9103C22.5464 12.9035 23.4232 12.964 24.1832 13.2956C24.2925 13.3277 24.3151 13.4429 24.3147 13.546V15.4918C24.3216 15.6126 24.1875 15.6537 24.0967 15.6074Z" fill="#31A8FF"></path> </g></svg><span class="font-semibold text-sm">Adobe Photoshop</span></div>
+                            <div class="tool-item"><svg viewBox="0 123.30600000000001 595.279 595.279" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><radialGradient id="a" cx="-183.69" cy="328.972" r=".76" gradientTransform="matrix(545.6736 0 0 528.3113 100439.305 -173525.125)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#423325" stop-opacity=".98"></stop><stop offset="1" stop-color="#1c0a00"></stop></radialGradient><path d="M24.803 155.549h545.674v530.792H24.803V155.549z" fill="url(#a)"></path><path d="M24.803 155.549h545.674v530.792H24.803V155.549zM0 711.145h595.28V130.746H0v580.399zm389.908-373.539c0-1.984.744-2.977 2.977-2.977h38.941c1.983 0 2.976.744 2.976 2.977v195.699c0 1.983-.496 2.976-2.976 2.976h-38.445c-2.48 0-3.225-1.24-3.225-3.224V337.606h-.248zm-2.728-56.304c0-15.874 11.161-25.299 25.3-25.299 15.13 0 25.299 10.169 25.299 25.299 0 16.37-10.665 25.299-25.795 25.299-14.387.001-24.804-8.929-24.804-25.299zM275.565 419.209c-6.944-27.532-23.314-87.556-29.516-116.576h-.496c-5.209 29.02-18.354 78.13-28.771 116.576h58.783zm-68.953 40.182l-19.595 74.41c-.496 1.983-1.24 2.479-3.72 2.479h-36.461c-2.48 0-2.977-.744-2.48-3.72l70.441-246.546c1.24-4.464 1.984-8.433 2.48-20.586 0-1.736.744-2.48 1.984-2.48h52.087c1.736 0 2.48.496 2.977 2.48l78.874 267.628c.496 1.983 0 3.224-1.984 3.224h-41.174c-1.984 0-3.225-.496-3.72-2.231l-20.339-74.658h-79.37z" fill="#ff7f18"></path></g></svg><span class="font-semibold text-sm">Adobe illustrator</span></div>
+                            <div class="tool-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Sketch-Logo--Streamline-Logos" height="24" width="24"> <desc>Sketch Logo Streamline Icon: https://streamlinehq.com</desc> <path fill="#ffffff" fill-rule="evenodd" d="M10.887 2.091 6.5 2.457v5.118l4.387 -5.484ZM5.5 2.833 1.25 8.5H5.5V2.833ZM1.267 9.5l8.99 10.703L5.67 9.5H1.267Zm12.476 10.703L22.733 9.5H18.33l-4.587 10.703ZM22.75 8.5 18.5 2.833V8.5h4.25ZM17.5 2.457v5.118L13.113 2.09l4.387 0.366ZM12 2.3l4.96 6.2H7.04L12 2.3ZM6.758 9.5 12 21.73 17.242 9.5H6.758Z" clip-rule="evenodd" stroke-width="1"></path></svg><span class="font-semibold text-sm">Sketch</span></div>
+                            <div class="tool-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-figma"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6 6a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3a3 3 0 0 1 -3 3h-6a3 3 0 0 1 -3 -3" /><path d="M9 9a3 3 0 0 0 0 6h3m-3 0a3 3 0 1 0 3 3v-15"/></svg><span class="font-semibold text-sm">Figma</span></div>
+                            <div class="tool-item"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 12.1333C2 8.58633 2 6.81283 2.69029 5.45806C3.29749 4.26637 4.26637 3.29749 5.45806 2.69029C6.81283 2 8.58633 2 12.1333 2H19.8667C23.4137 2 25.1872 2 26.5419 2.69029C27.7336 3.29749 28.7025 4.26637 29.3097 5.45806C30 6.81283 30 8.58633 30 12.1333V19.8667C30 23.4137 30 25.1872 29.3097 26.5419C28.7025 27.7336 27.7336 28.7025 26.5419 29.3097C25.1872 30 23.4137 30 19.8667 30H12.1333C8.58633 30 6.81283 30 5.45806 29.3097C4.26637 28.7025 3.29749 27.7336 2.69029 26.5419C2 25.1872 2 23.4137 2 19.8667V12.1333Z" fill="#001E36"></path> <path d="M8 22.5162V10.2034C8 10.1197 8.035 10.0718 8.11667 10.0718C9.3223 10.0718 10.5274 10 11.7333 10C13.6902 10 15.809 10.6691 16.5517 12.7162C16.7267 13.2188 16.82 13.7333 16.82 14.2718C16.82 15.3009 16.5867 16.1504 16.12 16.8205C14.8164 18.6923 12.557 18.6632 10.5317 18.6632V22.5043C10.5475 22.618 10.4506 22.6718 10.3567 22.6718H8.14C8.04667 22.6718 8 22.6239 8 22.5162ZM10.5433 12.3812V16.4017C11.3464 16.4605 12.1867 16.4669 12.9583 16.2103C13.8102 15.9645 14.2767 15.2272 14.2767 14.3436C14.3003 13.5907 13.8901 12.8683 13.1917 12.5966C12.4294 12.2796 11.3662 12.2606 10.5433 12.3812Z" fill="#31A8FF"></path> <path d="M24.0967 15.6074C23.7437 15.4213 23.3677 15.2852 22.979 15.2028C22.4796 15.0853 20.5098 14.6737 20.509 15.7037C20.5265 16.2787 21.4393 16.5604 21.8426 16.7247C23.2585 17.2108 24.8607 18.0797 24.8292 19.8264C24.8725 22.0008 22.7657 22.8701 20.9598 22.8703C20.0197 22.88 19.0403 22.7344 18.1799 22.3308C18.0977 22.2873 18.0449 22.1944 18.0484 22.0996V20.019C18.0391 19.9356 18.1287 19.8627 18.1987 19.9227C19.0417 20.4325 20.0409 20.6801 21.0162 20.6933C21.4467 20.6933 22.2999 20.6516 22.2935 20.019C22.2935 19.412 21.2728 19.1329 20.8659 18.9787C20.2761 18.7682 19.7169 18.4765 19.2036 18.1118C18.4862 17.6001 18.0362 16.7797 18.0484 15.8771C18.0442 13.8297 19.9835 12.9107 21.73 12.9103C22.5464 12.9035 23.4232 12.964 24.1832 13.2956C24.2925 13.3277 24.3151 13.4429 24.3147 13.546V15.4918C24.3216 15.6126 24.1875 15.6537 24.0967 15.6074Z" fill="#31A8FF"></path> </g></svg><span class="font-semibold text-sm">Adobe Photoshop</span></div>
+                            <div class="tool-item"><svg viewBox="0 123.30600000000001 595.279 595.279" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><radialGradient id="a" cx="-183.69" cy="328.972" r=".76" gradientTransform="matrix(545.6736 0 0 528.3113 100439.305 -173525.125)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#423325" stop-opacity=".98"></stop><stop offset="1" stop-color="#1c0a00"></stop></radialGradient><path d="M24.803 155.549h545.674v530.792H24.803V155.549z" fill="url(#a)"></path><path d="M24.803 155.549h545.674v530.792H24.803V155.549zM0 711.145h595.28V130.746H0v580.399zm389.908-373.539c0-1.984.744-2.977 2.977-2.977h38.941c1.983 0 2.976.744 2.976 2.977v195.699c0 1.983-.496 2.976-2.976 2.976h-38.445c-2.48 0-3.225-1.24-3.225-3.224V337.606h-.248zm-2.728-56.304c0-15.874 11.161-25.299 25.3-25.299 15.13 0 25.299 10.169 25.299 25.299 0 16.37-10.665 25.299-25.795 25.299-14.387.001-24.804-8.929-24.804-25.299zM275.565 419.209c-6.944-27.532-23.314-87.556-29.516-116.576h-.496c-5.209 29.02-18.354 78.13-28.771 116.576h58.783zm-68.953 40.182l-19.595 74.41c-.496 1.983-1.24 2.479-3.72 2.479h-36.461c-2.48 0-2.977-.744-2.48-3.72l70.441-246.546c1.24-4.464 1.984-8.433 2.48-20.586 0-1.736.744-2.48 1.984-2.48h52.087c1.736 0 2.48.496 2.977 2.48l78.874 267.628c.496 1.983 0 3.224-1.984 3.224h-41.174c-1.984 0-3.225-.496-3.72-2.231l-20.339-74.658h-79.37z" fill="#ff7f18"></path></g></svg><span class="font-semibold text-sm">Adobe illustrator</span></div>
+                            <div class="tool-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Sketch-Logo--Streamline-Logos" height="24" width="24"> <desc>Sketch Logo Streamline Icon: https://streamlinehq.com</desc> <path fill="#ffffff" fill-rule="evenodd" d="M10.887 2.091 6.5 2.457v5.118l4.387 -5.484ZM5.5 2.833 1.25 8.5H5.5V2.833ZM1.267 9.5l8.99 10.703L5.67 9.5H1.267Zm12.476 10.703L22.733 9.5H18.33l-4.587 10.703ZM22.75 8.5 18.5 2.833V8.5h4.25ZM17.5 2.457v5.118L13.113 2.09l4.387 0.366ZM12 2.3l4.96 6.2H7.04L12 2.3ZM6.758 9.5 12 21.73 17.242 9.5H6.758Z" clip-rule="evenodd" stroke-width="1"></path></svg><span class="font-semibold text-sm">Sketch</span></div>
+                        </div>
+                    </div>
+                </div>
+
+        <section id="projects" style="padding: 8rem 1.5rem;" class="">
+            <div class="container relative z-10">
+                <div class="flex justify-between items-end" style="margin-bottom: 4rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1.5rem;">
+                    <div>
+                        <div class="section-header-line">
+                            <span class="line-marker" style="background: var(--violet-500);"></span>
+                            <span class="text-xs font-semibold uppercase tracking-widest" style="color: var(--violet-400);">Projects</span>
+                        </div>
+                        <h2 class="text-4xl font-semibold tracking-tight text-white">Categories</h2>
+                    </div>
+                    <a href="projects.html" class="md-flex items-center gap-2 text-xs font-semibold text-muted uppercase tracking-widest md-hidden" style="color: var(--text-muted);">
+                        View All
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 24 24" data-icon="lucide:arrow-right" data-width="16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
+                    </a>
+                </div>
+                    
+                <!-- Categories -->
+                <div class="cards-categories"> 
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="MOOKUPS/3.jpg" alt="MOOKUPS" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="card-back">
+                                <p style="align-items: center;">Mockups are realistic visual representations used to showcase designs in a practical, real-world context. They allow designers to present their work—such as logos, branding, packaging, websites, or apps—on objects like business cards, billboards, devices, or products. Mockups help clients and audiences better understand how a design will look when applied, making presentations more engaging, professional, and convincing. They are essential tools for previewing, testing, and marketing design concepts before final production.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="تصميم حر/HAYAH MEDICAL/كوالتي عالية - علاج من الطبيعه.jpg" alt="Free Design" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="card-back">
+                                <p style="align-items: center;">The Free Design category highlights creative works developed without strict constraints or client requirements, allowing designers to fully express their ideas, style, and imagination. It includes experimental concepts, personal projects, and artistic explorations that showcase originality, innovation, and technical skills. This category reflects a designer’s unique vision and passion, often pushing creative boundaries beyond commercial limitations.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="سوشيال ميديا/9--.jpg" alt="Social Media" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="card-back">
+                                <p style="align-items: center;">The Social Media Design category focuses on visually engaging content created specifically for digital platforms such as Instagram, Facebook, Twitter, and LinkedIn. It includes posts, stories, banners, and ad creatives designed to capture attention, communicate messages effectively, and strengthen brand identity. These designs combine creativity with strategy, using layout, typography, color, and trends to boost engagement, increase reach, and deliver impactful visual communication in fast-paced online environments.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="مدرسين/باقة الترم التاني.jpg" alt="Teachers Posters" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="card-back">
+                                <p style="align-items: center;">The Teachers Posters Design category focuses on educational and informative visuals created to support teaching and enhance learning environments. These posters combine clear communication with engaging design, presenting concepts, instructions, or motivational messages in a visually appealing way. Designed for classrooms, workshops, and academic settings, they aim to simplify information, capture students’ attention, and create an inspiring educational atmosphere through effective use of layout, typography, and color.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="مشروع 1/project 3 _ free internet in Ramadan3.jpg" alt="Other_Projects" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="card-back">
+                                <p style="align-items: center;">Projects category showcases a diverse collection of design works that do not fall under a specific category. It includes a variety of creative projects that highlight versatility, problem-solving skills, and adaptability across different design styles and purposes. This category serves as a general portfolio space where designers present their work, demonstrate their capabilities, and explore multiple creative directions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <footer id="contact">
+            <div class="footer-glow"></div>
+
+            <div class="container relative z-10" style="text-align: center; max-width: 48rem;">
+                <h2 class="text-4xl md:text-6xl font-semibold tracking-tight text-white" style="margin-bottom: 1.5rem;">Ready to create?</h2>
+                <p class="text-muted text-lg" style="margin-bottom: 3rem;">Let's build something extraordinary together.</p>
+                
+                <a href="mailto:hello@arkvis.design" class="cta-btn">
+                    <span class="cta-bg-reveal"></span>
+                    <span class="relative flex items-center gap-2">
+                        Start a Project
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="20" height="20" viewBox="0 0 24 24" data-icon="lucide:arrow-right" data-width="20"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
+                    </span>
+                </a>
+
+                <div class="footer-bottom">
+                    <div style="margin-bottom: 1rem;">
+                        © 2026 Wael Studio. All copy-rights reserved.
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/e_l_5_a_l/" target="_blank" rel="noopener noreferrer" class="social-link"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="20" height="20" viewBox="0 0 24 24" data-icon="lucide:instagram" data-width="20"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"></path></g></svg></a>
+                        <a href="https://www.linkedin.com/in/ahmed-wael-abdel-rahman-2ab476380" target="_blank" rel="noopener noreferrer" class="social-link"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="20" height="20" viewBox="0 0 24 24" data-icon="lucide:linkedin" data-width="20"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></g></svg></a>
+                        <a href="https://www.facebook.com/ahmed.w.daraka" target="_blank" rel="noopener noreferrer" class="social-link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg></a>
+                        <a href="https://www.behance.net/ahmedwael3816" target="_blank" rel="noopener noreferrer" class="social-link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-behance"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5" /><path d="M3 12l4.5 0" /><path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1" /><path d="M16 6l3 0" /></svg></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="JS/main.js"></script>
+    </body>
+</html>

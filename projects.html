@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Security Headers -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="X-Content-Type-Options" content="nosniff">
+        <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+        <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+        <meta name="referrer" content="strict-origin-when-cross-origin">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://code.iconify.design https://fonts.googleapis.com; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-ancestors 'self';">
+        <link rel="icon" href="Imgs/W Logo.png" type="image/png">
+        <title>W Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <style>
+            @font-face {
+                font-family: 'Qood';
+                src: url('Fonts/qood-font/QoodRegular-E4RY4.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+                font-display: swap;
+            }
+        </style>
+        <!-- Icons -->
+        <script async src="https://code.iconify.design/3/3.1.0/iconify.min.js" integrity="sha512-XbuPj9OS+W65u7iUKxPYJ4vHc5KYaC4JbNrUK2kqN9SWdw8dZfz3z9MHoRtW/DhJdLEVaMHhzxGzv5V+5kYKA==" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body class="">
+        <!-- Loading Screen -->
+        <div class="loading-screen" id="loadingScreen-projects">
+            <div class="loading-ring"></div>
+            <div class="loading-logo">
+                <img src="Imgs/W Logo.png" alt="Logo">
+            </div>
+        </div>
+
+        <!-- Noise Texture -->
+        <div class="noise-overlay"></div>
+
+        <!-- Ambient Background Light -->
+        <div class="ambient-light">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="fixed z-40">
+            <div class="nav-content">
+                <a href="index.html" class="logo"><img src="Imgs/W Logo.png" alt="W Logo" class="logo-img">
+                    <img src="Imgs/Studio copy.png" alt="" class="logo-text">
+            </a>
+                
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html#about" class="nav-link">About Us</a>
+                    <a href="index.html#skills" class="nav-link">Skills</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="index.html#contact" class="btn-contact">Contact Us</a>
+                </div>
+
+                <button class="menu-btn" id="menuBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24" data-icon="lucide:menu" data-width="24" data-height="24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5h16M4 12h16M4 19h16"></path></svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Projects Header -->
+        <section style="padding: 12rem 1.5rem 4rem;" class="">
+            <div class="container relative z-10">
+                <div class="text-center max-w-4xl mx-auto">
+                    <div class="section-header-line justify-center">
+                        <span class="line-marker" style="background: var(--violet-500);"></span>
+                        <span class="text-xs font-semibold uppercase tracking-widest" style="color: var(--violet-400);">Portfolio</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-semibold tracking-tight text-white" style="margin-bottom: 2rem;">Our Projects</h1>
+                    <p class="text-lg text-muted" style="max-width: 600px; margin: 0 auto;">
+                        Explore our collection of creative works, from brand identities to digital experiences. Each project tells a unique story.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section style="padding: 2rem 1.5rem 8rem;" class="">
+            <div class="container relative z-10">
+                <div class="accordion-container">
+                    
+                    <!-- Main Card 1 -->
+                    <div class="main-card" data-card="1">
+                        <div class="main-card-header">
+                            <div class="main-card-icon">
+                                <span class="iconify1" ></span>
+                            </div>
+                            <br>
+                            <div class="main-card-content">
+                                <h3 class="main-card-title">MOOKUPS</h3>
+                            </div>
+                            <div class="accordion-arrow">
+                                <span class="iconify" data-icon="lucide:chevron-down"></span>
+                            </div>
+                        </div>
+                        <div class="child-cards-container">
+                            <div class="child-card">
+                                <h4 class="child-card-title">Drakula</h4>
+                                <div class="image">
+                                    <img loading="lazy" src="MOOKUPS/1.jpg" alt="drakula">
+                                    <img loading="lazy" src="MOOKUPS/2.jpg" alt="drakula">
+                                    <img loading="lazy" src="MOOKUPS/3.jpg" alt="drakula">
+                                    <img loading="lazy" src="MOOKUPS/دراكولا 1.jpg" alt="drakula">
+                                </div>
+                            </div>
+                            <div class="child-card">
+                                <h4 class="child-card-title">Bloody Game</h4>
+                                <div class="image">
+                                    <img loading="lazy" src="MOOKUPS/Mockup 2.jpg" alt="bloody game">
+                                    <img loading="lazy" src="MOOKUPS/Mockup.jpg" alt="bloody game">
+                                    <img loading="lazy" src="MOOKUPS/Mockup3.jpg" alt="bloody game">
+                                    <img loading="lazy" src="MOOKUPS/Mockup4.jpg" alt="bloody game">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Card 2 -->
+                    <div class="main-card" data-card="2">
+                        <div class="main-card-header">
+                            <div class="main-card-icon">
+                                <span class="iconify2" data-icon="lucide:smartphone"></span>
+                            </div>
+                            <br>
+                            <div class="main-card-content">
+                                <h3 class="main-card-title">Free Design</h3>
+                            </div>
+                            <div class="accordion-arrow">
+                                <span class="iconify" data-icon="lucide:chevron-down"></span>
+                            </div>
+                        </div>
+                        <div class="child-cards-container">
+                            <div class="child-card">
+                                <h4 class="child-card-title">Hayah Medical</h4>
+                                <div class="image">
+                                    <img loading="lazy" src="تصميم حر/HAYAH MEDICAL/كوالتي عالية - علاج من الطبيعه.jpg" alt="Hayah Medical">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Card 3 -->
+                    <div class="main-card" data-card="3">
+                        <div class="main-card-header">
+                            <div class="main-card-icon">
+                                <span class="iconify3" data-icon="lucide:palette"></span>
+                            </div>
+                            <br>
+                            <div class="main-card-content">
+                                <h3 class="main-card-title">Social Media</h3>
+                            </div>
+                            <div class="accordion-arrow">
+                                <span class="iconify" data-icon="lucide:chevron-down"></span>
+                            </div>
+                        </div>
+                        <div class="child-cards-container">
+                            <div class="child-card">
+                                <h4 class="child-card-title">Social Media</h4>
+                                <div class="image">
+                                    <img loading="lazy" src="سوشيال ميديا/10--.jpg" alt="Sauvage">
+                                    <img loading="lazy" src="سوشيال ميديا/9--.jpg" alt="Sauvage">
+                                    <img loading="lazy" src="سوشيال ميديا/11221.jpg" alt="Robot">
+                                    <img loading="lazy" src="سوشيال ميديا/12--.jpg" alt="Burger">
+                                    <img loading="lazy" src="سوشيال ميديا/13--.jpg" alt="Burger">
+                                    <img loading="lazy" src="سوشيال ميديا/13.png" alt="Mercedes Monster">
+                                    <img loading="lazy" src="سوشيال ميديا/15--.jpg" alt="Beats">
+                                    <img loading="lazy" src="سوشيال ميديا/16--.jpg" alt="Beats">
+                                    <img loading="lazy" src="سوشيال ميديا/19.png" alt="Ice Coffee">
+                                    <img loading="lazy" src="سوشيال ميديا/20.png" alt="Ocean Shark">
+                                    <img loading="lazy" src="سوشيال ميديا/21.png" alt="Sandwitch Ketchup">
+                                    <img loading="lazy" src="سوشيال ميديا/22.png" alt="Baytun">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Card 4 -->
+                    <div class="main-card" data-card="4">
+                        <div class="main-card-header">
+                            <div class="main-card-icon">
+                                <span class="iconify4" data-icon="lucide:palette"></span>
+                            </div>
+                            <br>
+                            <div class="main-card-content">
+                                <h3 class="main-card-title">Teachers Posters</h3>
+                            </div>
+                            <div class="accordion-arrow">
+                                <span class="iconify" data-icon="lucide:chevron-down"></span>
+                            </div>
+                        </div>
+                            <div class="child-cards-container">
+                            <div class="child-card">
+                                <h4 class="main-card-title">Teachers Posters</h4>
+                                <div class="image">
+                                    <img loading="lazy" src="مدرسين/باقة الترم التاني.jpg" alt="Physics">
+                                    <img loading="lazy" src="مدرسين/ثروت رمضان_.jpg" alt="France">
+                                    <img loading="lazy" src="مدرسين/جيلوجيا.jpg" alt="Geology">
+                                    <img loading="lazy" src="مدرسين/حامد علوم.jpg" alt="Sciences">
+                                    <img loading="lazy" src="مدرسين/خالد وليد ذهبية.jpg" alt="Khalid Waleed">
+                                    <img loading="lazy" src="مدرسين/خالد وليد.jpg" alt="Khalid Waleed">
+                                    <img loading="lazy" src="مدرسين/ديناميكا فاخر.jpg" alt="Dynamics">
+                                    <img loading="lazy" src="مدرسين/شهادة تقديؤ.jpg" alt="Certificate">
+                                    <img loading="lazy" src="مدرسين/قاسم رمضان 1 ث.jpg" alt="Qasim Ramadan">
+                                    <img loading="lazy" src="مدرسين/محمد حافظ.jpg" alt="Mohamed Hafez">
+                                    <img loading="lazy" src="مدرسين/مربع اؤسطو.jpg" alt="Square">
+                                    <img loading="lazy" src="مدرسين/مصطفى عبدالله.jpg" alt="Mustafa Abdullah">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Card 5 -->
+                    <div class="main-card" data-card="5">
+                        <div class="main-card-header">
+                            <div class="main-card-icon">
+                                <span class="iconify5" data-icon="lucide:palette"></span>
+                            </div>
+                            <br>
+                            <div class="main-card-content">
+                                <h3 class="main-card-title">Free Projects</h3>
+                            </div>
+                            <div class="accordion-arrow">
+                                <span class="iconify" data-icon="lucide:chevron-down"></span>
+                            </div>
+                        </div>
+                            <div class="child-cards-container">
+                            <div class="child-card">
+                                <h4 class="main-card-title">Free Projects</h4>
+                                <div>
+                                    <div class="child-card-item">
+                                        <p>Speenet</p>
+                                        <div class="image">
+                                            <img loading="lazy" src="مشروع 1/project 1 _ free internet in Ramadan.jpg" alt="Speenet - Free Internet Ramadan 1">
+                                            <img loading="lazy" src="مشروع 1/project 2 _ free internet in Ramadan3.jpg" alt="Speenet - Free Internet Ramadan 2">
+                                            <img loading="lazy" src="مشروع 1/project 3 _ free internet in Ramadan3.jpg" alt="Speenet - Free Internet Ramadan 3">
+                                            <img loading="lazy" src="مشروع 1/Whisk_1e50681c902129496c2472c09479ebafdr.jpeg" alt="Speenet - Mockup">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="child-card-item">
+                                        <p>Lubna Bakery</p>
+                                        <div class="image">
+                                            <img loading="lazy" src="مشروع 2/Project 1.jpg" alt="Lubna Bakery - Project 1">
+                                            <img loading="lazy" src="مشروع 2/Project 2.jpg" alt="Lubna Bakery - Project 2">
+                                            <img loading="lazy" src="مشروع 2/Project 3.jpg" alt="Lubna Bakery - Project 3">
+                                            <img loading="lazy" src="مشروع 2/Whisk_e81ca32d7b7f3098854454508bbd52b3dr.jpeg" alt="Lubna Bakery - Mockup">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="child-card-item">
+                                        <p>Sayaratook</p>
+                                        <div class="image">
+                                            <img loading="lazy" src="مشروع 3/1.jpg" alt="Sayaratook - Project 1">
+                                            <img loading="lazy" src="مشروع 3/2.jpg" alt="Sayaratook - Project 2">
+                                            <img loading="lazy" src="مشروع 3/3.jpg" alt="Sayaratook - Project 3">
+                                            <img loading="lazy" src="مشروع 3/Whisk_2b64c1a26d80448ad0345aa06f579dc1dr.jpeg" alt="Sayaratook - Mockup">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="child-card-item">
+                                        <p>ECO Healthcare</p>
+                                        <div class="image">
+                                            <img loading="lazy" src="مشروع 4/AIEnhancer_1.png" alt="ECO Healthcare - Design 1">
+                                            <img loading="lazy" src="مشروع 4/AIEnhancer_2.png" alt="ECO Healthcare - Design 2">
+                                            <img loading="lazy" src="مشروع 4/AIEnhancer_3.png" alt="ECO Healthcare - Design 3">
+                                            <img loading="lazy" src="مشروع 4/Whisk_9eba4f77ce49bc0af0a41ba3a7f2d9dddr.png" alt="ECO Healthcare - Mockup">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="child-card-item">
+                                        <p>Rebuy</p>
+                                        <div class="image">
+                                            <img loading="lazy" src="مشروع 5/1.jpg" alt="Rebuy - Design 1">
+                                            <img loading="lazy" src="مشروع 5/2.jpg" alt="Rebuy - Design 2">
+                                            <img loading="lazy" src="مشروع 5/3.jpg" alt="Rebuy - Design 3">
+                                            <img loading="lazy" src="مشروع 5/AIEnhancer_Highquality_realistic_mockup_2 (1).jpg" alt="Rebuy - Mockup 1">
+                                            <img loading="lazy" src="مشروع 5/AIEnhancer_Highquality_realistic_mockup_2.jpg" alt="Rebuy - Mockup 2">
+                                            <img loading="lazy" src="مشروع 5/AIEnhancer_Image_202602020444.jpg" alt="Rebuy - AI Enhanced">
+                                            <img loading="lazy" src="مشروع 5/Whisk_011334a4d31c1bb89b24e26ddec9df32eg.png" alt="Rebuy - Final Mockup">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact">
+                <p>© 2026 Wael Studio. All copy-rights reserved.</p>
+        </footer>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+            <div class="lightbox-overlay"></div>
+            <button id="lb-close" class="lb-close">&#x2715;</button>
+            <button id="lb-prev"  class="lb-arrow lb-prev">&#8249;</button>
+            <button id="lb-next"  class="lb-arrow lb-next">&#8250;</button>
+            <div class="lb-img-wrap">
+                <img id="lb-img" src="" alt="">
+            </div>
+            <div id="lb-counter" class="lb-counter"></div>
+        </div>
+
+        <script defer src="JS/main.js"></script>
+    </body>
+</html>
